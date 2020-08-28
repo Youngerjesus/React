@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\jeongmin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add proto-type
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\jeongmin\Downloads\jdk-13.0.1_windows-x64_bin\jdk-13.0.1\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\jeongmin\Downloads\jdk-13.0.1_windows-x64_bin\jdk-13.0.1\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.6.3\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\jeongmin\.windows-build-tools\python27\;C:\Users\jeongmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\bin;C:\Users\jeongmin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeongmin\AppData\Roaming\npm;;C:\Users\여정민\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeongmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\WebStorm 2020.2\bin;
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/proto-type: Not found
+      at Request.params.callback [as _callback] (C:\Users\jeongmin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66926:18)
+      at Request.self.callback (C:\Users\jeongmin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140564:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Users\jeongmin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141536:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Users\jeongmin\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141458:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
