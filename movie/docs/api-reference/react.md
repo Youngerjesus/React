@@ -247,3 +247,96 @@ render() 메서드에서 children의 집합을 다루고 싶을 때,
 
 특히 this.props.children을 하부로 전달하기 전에 다시 정렬하거나 일부만 잘라내고 싶을 때에 유용합니다.
 
+* * * 
+##### React.createRef
+
+React.createRef는 React 엘리먼트에 ref 어트리뷰트로 붙일 수 있는 ref를 생성합니다.
+
+```jsx
+    class MyComponent extends React.Component {
+      constructor(props) {
+        super(props);
+    
+        this.inputRef = React.createRef();
+      }
+    
+      render() {
+        return <input type="text" ref={this.inputRef} />;
+      }
+    
+      componentDidMount() {
+        this.inputRef.current.focus();
+      }
+    }
+```
+
+* * * 
+##### React.forwardRef
+
+React.forwardRef는 전달받은 ref 어트리뷰트를 하부 트리 내의 다른 컴포넌트로 전달하는 React 컴포넌트를 생성합니다.
+ 
+이 기법은 잘 사용되지 않지만, 아래의 두 시나리오에서는 특히 유용합니다.
+
+DOM 엘리먼트로 ref 전달하기
+
+고차 컴포넌트(Higer Order Component)로 ref 전달하기
+
+```jsx
+    const FancyButton = React.forwardRef((props, ref) => (
+      <button ref={ref} className="FancyButton">
+        {props.children}
+      </button>
+    ));
+    
+    // You can now get a ref directly to the DOM button:
+    const ref = React.createRef();
+    <FancyButton ref={ref}>Click me!</FancyButton>;
+```
+    위의 예시에서 React는 <FancyButton ref={ref}> 엘리먼트에 주어진 ref를 
+    
+    React.forwardRef 호출시 렌더링 함수에 2번째 인자로 전달합니다.
+     
+    이 렌더링 함수는 ref를 <button ref={ref}> 엘리먼트에 전달합니다.
+    
+    자세한 내용은 advance-guides에 있습니다
+
+* * * 
+##### React.lazy
+
+React.lazy()를 사용하면 동적으로 불러오는 컴포넌트를 정의할 수 있습니다. 
+
+그러면 번들의 크기를 줄이고, 초기 렌더링에서 사용되지 않는 컴포넌트를 불러오는 작업을 지연시킬 수 있습니다.
+
+lazy한 컴포넌트를 렌더링하려면 렌더링 트리 상위에 <React.Suspense> 컴포넌트가 존재해야 한다는 점에 유의하세요. 
+
+```jsx
+    const SomeComponent = React.lazy(() => import('./SomeComponent'));
+```
+
+* * * 
+##### React.Suspense
+
+React.Suspense lets you specify the loading indicator in case some components in the tree below it are not yet ready to render. 
+
+Today, lazy loading components is the only use case supported by <React.Suspense>:
+
+```jsx
+    // 이 컴포넌트는 동적으로 불러옵니다
+    const OtherComponent = React.lazy(() => import('./OtherComponent'));
+    
+    function MyComponent() {
+      return (
+        // Displays <Spinner> until OtherComponent loads
+        <React.Suspense fallback={<Spinner />}>
+          <div>
+            <OtherComponent />
+          </div>
+        </React.Suspense>
+      );
+```
+
+lazy components can be deep inside the Suspense tree —  it doesn’t have to wrap every one of them. 
+
+The best practice is to place <Suspense> where you want to see a loading indicator, 
+
+but to use lazy() wherever you want to do code splitting.
