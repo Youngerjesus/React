@@ -7,6 +7,9 @@ https://reactjs.org/docs/getting-started.html
 * * * 
 
 ### API Reference 
+<ul>
+    <li> <a href="movie/docs/api-reference/react.md"> React API </a> </li>
+</ul>
 
 ### Advanced Guides 
 <ul>
