@@ -9,7 +9,6 @@
     <li> Concurrent Mode</li>
     <li> FAQ </li>
 </ul>
-
 2020. 08.29 ~ 현재 
 React docs를 정리하는 Repository 입니다. 
 
