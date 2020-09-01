@@ -9,8 +9,9 @@
     <li> Concurrent Mode</li>
     <li> FAQ </li>
 </ul>
-2020. 08.29 ~ 현재 
-React docs를 정리하는 Repository 입니다. 
+2020. 08.29 ~ 현재 <br>
+
+React References를 정리하는 Repository 입니다. 
 
 https://reactjs.org/docs/getting-started.html
 
@@ -18,6 +19,7 @@ https://reactjs.org/docs/getting-started.html
 ### Main Concepts 
 <ul>
     <li> <a href="References/docs/main-concepts/renderingElements.md"> Rendering Elements</a> </li>
+    <li> <a href="References/docs/main-concepts/stateAndLifecycle.md"> State And Lifecycle </a> </li>
 </ul>
 
 ### API Reference 
