@@ -20,8 +20,9 @@ https://reactjs.org/docs/getting-started.html
 <ul>
     <li> <a href="References/docs/main-concepts/renderingElements.md"> Rendering Elements</a> </li>
     <li> <a href="References/docs/main-concepts/stateAndLifecycle.md"> State And Lifecycle </a> </li>
+    <li> <a href="References/docs/main-concepts/componentAndProps.md"> Components And Props </a> </li>
 </ul>
-
+ 
 ### API Reference 
 <ul>
     <li> <a href="References/docs/api-reference/react.md"> React API </a> </li>
