@@ -244,7 +244,7 @@ temperature와 scale의 현재 입력값을 이 컴포넌트의 지역 state에 
         this.state = {temperature: '', scale: 'c'};
       }
     
-      handleCelsiusChange(temperature) {
+      handleCelsiusChange(temperature) {****
         this.setState({scale: 'c', temperature});
       }
     
