@@ -26,6 +26,7 @@ https://reactjs.org/docs/getting-started.html
     <li> <a href="References/docs/main-concepts/LiftingStateUp.md"> Lifting State Up </a> </li>
     <li> <a href="References/docs/main-concepts/CompositionVsInheritance.md"> Composition vs Inheritance </a> </li>
     <li> <a href="References/docs/main-concepts/ListsAndKeys.md"> Lists and Keys </a> </li>
+    <li> <a href="References/docs/main-concepts/Form.md"> Forms </a> </li>
 </ul>
  
 ### API Reference 
