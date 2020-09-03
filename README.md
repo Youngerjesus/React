@@ -22,6 +22,7 @@ https://reactjs.org/docs/getting-started.html
     <li> <a href="References/docs/main-concepts/stateAndLifecycle.md"> State And Lifecycle </a> </li>
     <li> <a href="References/docs/main-concepts/componentAndProps.md"> Components And Props </a> </li>
     <li> <a href="References/docs/main-concepts/HandlingEvents.md"> Handling Events</a> </li>
+    <li> <a href="References/docs/main-concepts/ConditionalRendering.md"> Conditional Rendering </a> </li>
 </ul>
  
 ### API Reference 
